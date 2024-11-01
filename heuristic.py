@@ -1,4 +1,4 @@
 import math 
 
-def heuristic(a, b):
+def heuristic(playerPosition, balls , goals):
    
