@@ -5,7 +5,10 @@ def successor(playerPosition , map , obstacles):
     possibleWays = []
     
     #all moves 
-    moves = [(0 , 1) , (0 , -1) , (1 , 0) , (-1 , 0)]
+    moves = {'U' : (x-1 , y) ,
+             'D':(x+1 , y) , 
+             'L':(x , y-1) , 
+             'R':(x , y+1)}
     
     for move in moves:
         dx , dy = move
