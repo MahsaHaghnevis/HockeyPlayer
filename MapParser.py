@@ -12,3 +12,8 @@ def mapPars(input):
         row =  input[i].split()
         gameRow = []
         
+        for j in range(cols):
+            cell = row[j]
+            
+            gameRow.append(cell)
+        
