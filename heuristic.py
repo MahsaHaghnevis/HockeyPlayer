@@ -7,5 +7,5 @@ def heuristic(playerPosition, balls , goals):
        nearestBallDistance = min(nearestBallDistance , distance)
    
    
-   nearestGoalDistance = math.inf
+   nearestGoalDistance = 0
     
