@@ -9,7 +9,7 @@ def mapPars(input):
     
     
     for i in range (1 , rows+1):
-        row =  input[i].split()
+        row =  input[i].split(' ')
         gameRow = []
         
         for j in range(cols):
@@ -42,3 +42,13 @@ def mapPars(input):
         
     }
         
+input_lines = [
+    "6 10",
+    "1P 1 1 1 0 X 1 1 1 1",
+    "0 X 1 1 0 0 0 1 0 X",
+    "0 0 1 2B 2 2 2B 1 0 0",
+    "1 1 0 X X 2 2 1 1G 1",
+    "1 1 0 0 0 2 1 1 1 1",
+    "1 1 1 1 1 1G 1 1 1 1"
+]
+print(mapPars(input_lines))
