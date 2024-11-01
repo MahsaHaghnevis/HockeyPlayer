@@ -31,4 +31,5 @@ def mapPars(input):
             elif cell == 'X': #obstacle position
                 obstacles.append((i-1 , j))
                 
+        gameMap.append(gameRow)
         
