@@ -18,6 +18,6 @@ def successor(playerPosition , map , obstacles):
         if (newX , newY) in obstacles and map[newX][newY][1] == 'X':
             continue
         
-        possibleWays.append((newX , newY))
+        possibleWays.append((dir , (newX , newY)))
         
     return possibleWays
