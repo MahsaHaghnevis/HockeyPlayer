@@ -4,5 +4,7 @@ def successor(playerPosition , map , obstacles):
     
     possibleWays = []
     
+    #all moves 
+    moves = [(0 , 1) , (0 , -1) , (1 , 0) , (-1 , 0)]
     
     
