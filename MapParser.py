@@ -33,3 +33,12 @@ def mapPars(input):
                 
         gameMap.append(gameRow)
         
+    return {
+        "gameMap" : gameMap,
+        "playerPosition" : playerPosition,
+        "balls" : balls,
+        "goals" : goals,
+        "obstacles" : obstacles
+        
+    }
+        
