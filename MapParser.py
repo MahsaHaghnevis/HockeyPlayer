@@ -7,6 +7,7 @@ def mapPars(input):
     goals = []
     obstacles = []
     
+    availableCells = ['B' , 'G' , 'P' , 'X']
     
     for i in range (1 , rows+1):
         row =  input[i].split(' ')
@@ -15,20 +16,25 @@ def mapPars(input):
         for j in range(cols):
             cell = row[j]
             
-            gameRow.append(cell)
+            if cell[-1] in availableCells:
+                cost = int( cell[:-1])
+                obj = cell[-1]
+                
+            
+            gameRow.append((obj , cost))
             
             
             #finding positions needed
-            if cell == 'P': #player position
+            if obj == 'P': #player position
                 playerPosition = (i-1 , j) 
                 
-            elif cell == 'B': #a ball posiition
+            elif obj == 'B': #a ball posiition
                 balls.append((i-1 , j))
                 
-            elif cell == 'G': #goal position
+            elif obj == 'G': #goal position
                 goals.append((i-1 , j))
                 
-            elif cell == 'X': #obstacle position
+            elif obj == 'X': #obstacle position
                 obstacles.append((i-1 , j))
                 
         gameMap.append(gameRow)
