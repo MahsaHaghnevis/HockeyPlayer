@@ -25,6 +25,7 @@ def mapPars(input):
             elif cell == 'B': #a ball posiition
                 balls.append((i-1 , j))
                 
-                
+            elif cell == 'G': #goal position
+                goals.append((i-1 , j))
                 
         
