@@ -10,4 +10,7 @@ def successor(playerPosition , map , obstacles):
     for move in moves:
         dx , dy = move
         newX , newY = x + dx , y + dy
-       
+            
+        if newX < 0 or newY < 0 or newX >= len(map) or newY >= len(map[0]):
+            continue
+        
