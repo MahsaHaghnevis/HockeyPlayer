@@ -1,5 +1,5 @@
 def mapPars(input):
-    row , cols = map(int , input[0].split())
+    rows , cols = map(int , input[0].split())
     
     gameMap = []
     playerPosition = None
@@ -8,4 +8,7 @@ def mapPars(input):
     obstacles = []
     
     
-    
+    for i in range (1 , rows+1):
+        row =  input[i].split()
+        gameRow = []
+        
