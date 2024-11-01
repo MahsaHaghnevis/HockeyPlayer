@@ -48,7 +48,7 @@ def mapPars(input):
         
     }
         
-input_lines = [
+'''input_lines = [
     "6 10",
     "1P 1 1 1 0 X 1 1 1 1",
     "0 X 1 1 0 0 0 1 0 X",
@@ -56,6 +56,16 @@ input_lines = [
     "1 1 0 X X 2 2 1 1G 1",
     "1 1 0 0 0 2 1 1 1 1",
     "1 1 1 1 1 1G 1 1 1 1"
+]'''
+
+input_lines = [
+    "5 8",
+    "0 1 1P 1 0 0 1 1",
+    "0 0 1 0 1 1 0 0",
+    "B 2 2B 1 1 0 X 0",
+    "1 1 1 1 0 0 1 G",
+    "1 1 0 1 1 1 1 1"
 ]
+
 ans=mapPars(input_lines)
 print(ans["gameMap"] , ans["playerPosition"] , ans["balls"] , ans["goals"] , ans["obstacles"] , end='\n')
