@@ -17,12 +17,13 @@ def mapPars(input):
             cell = row[j]
             
             if cell[-1] in availableCells:
-                cost = int( cell[:-1])
+                cost = int(cell[:-1]) if len(cell) > 1 else 0
                 obj = cell[-1]
+            else :
+                cost = int(cell)
+                obj = None
                 
-            
             gameRow.append((obj , cost))
-            
             
             #finding positions needed
             if obj == 'P': #player position
@@ -57,4 +58,5 @@ input_lines = [
     "1 1 0 0 0 2 1 1 1 1",
     "1 1 1 1 1 1G 1 1 1 1"
 ]
-print(mapPars(input_lines))
+ans=mapPars(input_lines)
+print(ans["gameMap"] , ans["playerPosition"] , ans["balls"] , ans["goals"] , ans["obstacles"] , end='\n')
