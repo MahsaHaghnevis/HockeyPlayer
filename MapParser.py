@@ -21,4 +21,10 @@ def mapPars(input):
             #finding positions needed
             if cell == 'P': #player position
                 playerPosition = (i-1 , j) 
+                
+            elif cell == 'B': #a ball posiition
+                balls.append((i-1 , j))
+                
+                
+                
         
