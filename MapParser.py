@@ -16,4 +16,9 @@ def mapPars(input):
             cell = row[j]
             
             gameRow.append(cell)
+            
+            
+            #finding positions needed
+            if cell == 'P': #player position
+                playerPosition = (i-1 , j) 
         
