@@ -10,15 +10,14 @@ def successor(playerPosition , map , obstacles):
              'L':(x , y-1) , 
              'R':(x , y+1)}
     
-    for move in moves:
-        dx , dy = move
-        newX , newY = x + dx , y + dy
-            
+    for dir , (newX , newY) in moves.items():
+      
         if newX < 0 or newY < 0 or newX >= len(map) or newY >= len(map[0]):
             continue
         
-        if (newX , newY) in obstacles:
+        if (newX , newY) in obstacles and map[newX][newY][1] == 'X':
             continue
+        
         possibleWays.append((newX , newY))
         
     return possibleWays
