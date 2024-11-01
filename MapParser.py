@@ -22,7 +22,7 @@ def mapPars(input):
             else :
                 cost = int(cell)
                 obj = None
-            gameRow.append((obj , cost))
+            gameRow.append((cost , obj))
             
             #finding positions needed
             if obj == 'P': #player position
