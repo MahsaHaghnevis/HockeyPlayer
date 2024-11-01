@@ -7,4 +7,7 @@ def successor(playerPosition , map , obstacles):
     #all moves 
     moves = [(0 , 1) , (0 , -1) , (1 , 0) , (-1 , 0)]
     
-    
+    for move in moves:
+        dx , dy = move
+        newX , newY = x + dx , y + dy
+       
