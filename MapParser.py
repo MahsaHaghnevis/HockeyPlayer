@@ -28,4 +28,7 @@ def mapPars(input):
             elif cell == 'G': #goal position
                 goals.append((i-1 , j))
                 
+            elif cell == 'X': #obstacle position
+                obstacles.append((i-1 , j))
+                
         
